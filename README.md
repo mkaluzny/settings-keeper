@@ -8,7 +8,7 @@
   ```
 cd checkout_dir
 git add .
-git commit -m "Initial commit"
+git commit -m "My settings"
 git push origin master
 ```
 
