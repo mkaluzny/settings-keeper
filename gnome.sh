@@ -6,6 +6,10 @@ function store {
 	mkdir gnome
     fi
     dconf dump /org/gnome/desktop/wm/keybindings/ > gnome/keybindings.dconf
+    git add -A gnome/
+    now=$(date +"%Y-%m-%d %H:%M")
+    git commit -m "Changes from $now"
+    git push origin master
 }
 
 function load {
