@@ -20,7 +20,7 @@ function createlinks {
 case $1 in
     "store" )
 	echo "storing..."
-	git add -A 
+	git add -A configs
 	now=$(date +"%Y-%m-%d %H:%M")
 	git commit -m "Changes from $now"
 	git push origin master
