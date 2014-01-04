@@ -15,6 +15,12 @@ function load
     if test -e gnome/keybindings.dconf
         dconf load /org/gnome/desktop/wm/keybindings/ < gnome/keybindings.dconf
     end
+    if test -e gnome/preferences.dconf
+        dconf load /org/gnome/desktop/wm/preferences/ < gnome/preferences.dconf
+    end
+    if test -e gnome/shell.dconf
+        dconf load /org/gnome/shell/ < gnome/shell.dconf
+    end
 end
 
 switch (echo $argv)
